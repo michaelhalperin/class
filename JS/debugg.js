@@ -1,4 +1,4 @@
-const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve'];
+const names = ['Alice', 'israel', 'Charlie', 'David', 'Eve'];
 
 function shouldSkip(name) {
     return name === 'charlie';
