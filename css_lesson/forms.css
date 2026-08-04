@@ -1,0 +1,15 @@
+.registry {
+    background-color: gray;
+    padding: 80px;
+    margin-left: 15px;
+    width: 250px;
+    height: 200px;
+}
+
+input[type="date"] {
+    color: green;
+}
+
+form > span {
+    color: blue
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./forms.css"/>
+  </head>
+  <body>
+    <form class="registry" action="/register" method="post">
+      <span>*</span>
+      <label for="username">name:</label>
+      <input
+        type="text"
+        required
+        id="username"
+        name="username"
+        title="you must enter a username"
+        placeholder="enter username"
+        value="John Doe"
+      />
+
+      <input type="date" name="date" />
+
+      <label for="age">age:</label>
+      <input type="number" id="age" name="age" min="0" max="120" />
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
