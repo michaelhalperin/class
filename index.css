@@ -1,0 +1,36 @@
+#title::before {
+  content: " hello ";
+  color: lightblue;
+}
+
+#title::after {
+  content: " world ";
+  color: lightblue;
+}
+
+.btn {
+  color:red;
+  width: 250px;
+}
+.btn2 {
+  color:red;
+  width: 250px;
+}
+
+.btn:hover {
+  color:blue;
+  width: 25px;
+}
+
+.input:focus{
+  border: 1px solid green;
+  border-radius: 8px;
+}
+
+input::placeholder{
+  color: red;
+}
+
+li:nth-child(1){
+  color: red;
+}

@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./flexbox.css" rel="stylesheet" />
+    <title>שיעור CSS Flexbox — דוגמאות לכיתה</title>
+  </head>
+  <body>
+    <!-- ========== 1. מה זה Flexbox ========== -->
+    <section>
+      <p>1 — מה זה Flexbox?</p>
+      <p>
+        Flexbox = Layout חד-ממדי. display:flex על האב → הילדים הופכים
+        flex-items. מאפשר יישור, חלוקת מקום, ורווחים גמישים.
+      </p>
+
+      <div class="demo-box flex-basic">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 2. Row vs Column ========== -->
+    <section>
+      <p>2 — flex-direction: row vs column</p>
+      <p>
+        row (ברירת מחדל) = שורה, main axis אופקי. column = עמודה, main axis
+        אנכי.
+      </p>
+
+      <p class="label">flex-direction: row</p>
+      <div class="demo-box flex-row">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+
+      <p class="label">flex-direction: column</p>
+      <div class="demo-box flex-column">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 3. justify-content ========== -->
+    <section>
+      <p>3 — justify-content (ציר ראשי)</p>
+      <p>יישור בציר הראשי — אופקי כש-direction הוא row.</p>
+
+      <p class="label">flex-start</p>
+      <div class="demo-box justify-start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">center</p>
+      <div class="demo-box justify-center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">flex-end</p>
+      <div class="demo-box justify-end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">space-between</p>
+      <div class="demo-box justify-between">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">space-around</p>
+      <div class="demo-box justify-around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 4. align-items ========== -->
+    <section>
+      <p>4 — align-items (ציר מאונך)</p>
+      <p>יישור בציר המאונך — אנכי כש-direction הוא row.</p>
+
+      <p class="label">flex-start</p>
+      <div class="demo-box align-start tall">
+        <div class="item">A</div>
+        <div class="item tall-item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">center</p>
+      <div class="demo-box align-center tall">
+        <div class="item">A</div>
+        <div class="item tall-item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">flex-end</p>
+      <div class="demo-box align-end tall">
+        <div class="item">A</div>
+        <div class="item tall-item">B</div>
+        <div class="item">C</div>
+      </div>
+
+      <p class="label">stretch</p>
+      <div class="demo-box align-stretch tall">
+        <div class="item stretch-item">A</div>
+        <div class="item stretch-item">B</div>
+        <div class="item stretch-item">C</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 5. gap + flex-wrap ========== -->
+    <section>
+      <p>5 — gap + flex-wrap</p>
+      <p>
+        gap = רווח בין items (מחליף margin). flex-wrap: wrap = עובר לשורה הבאה
+        כשאין מקום.
+      </p>
+
+      <p class="label">gap: 1rem</p>
+      <div class="demo-box flex-gap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+      </div>
+
+      <p class="label">flex-wrap: wrap</p>
+      <div class="demo-box flex-wrap-demo">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 6. Nav ========== -->
+    <section>
+      <p>6 — Nav עם Flexbox</p>
+      <p>
+        display:flex + justify-content:space-between + align-items:center +
+        gap:1rem
+      </p>
+
+      <nav class="nav">
+        <div class="logo">Logo</div>
+        <div class="nav-links">
+          <a href="#">בית</a>
+          <a href="#">אודות</a>
+          <a href="#">צור קשר</a>
+        </div>
+      </nav>
+    </section>
+
+    <hr />
+
+    <!-- ========== 7. מרכוז מלא ========== -->
+    <section>
+      <p>7 — מרכוז מלא</p>
+      <p>
+        justify-content: center + align-items: center = מרכוז מלא (הכי נפוץ)
+      </p>
+
+      <div class="hero">
+        <div class="item">ממורכז!</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 8. flex: 1 / fixed sidebar ========== -->
+    <section>
+      <p>8 — Flex Items: flex:1 ורוחב קבוע</p>
+      <p>
+        flex: 1 = תפוס מקום פנוי. flex: 0 0 240px = רוחב קבוע שלא גדל ולא
+        מתכווץ.
+      </p>
+
+      <div class="layout">
+        <aside class="sidebar">Sidebar<br />flex: 0 0 240px</aside>
+        <main class="main">Main<br />flex: 1</main>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 9. align-self + order ========== -->
+    <section>
+      <p>9 — align-self + order</p>
+      <p>
+        align-self = override ל-align-items על item ספציפי. order = סדר ויזואלי
+        ללא שינוי HTML.
+      </p>
+
+      <p class="label">align-self</p>
+      <div class="demo-box align-self-demo tall">
+        <div class="item self-start">start</div>
+        <div class="item">default</div>
+        <div class="item self-end">end</div>
+      </div>
+
+      <p class="label">order (CTA מופיע ראשון — order: -1)</p>
+      <div class="demo-box order-demo">
+        <div class="item">Logo</div>
+        <div class="item">Menu</div>
+        <div class="item order-first">CTA</div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- ========== 10. Cards ========== -->
+    <section>
+      <p>10 — Card grid עם flex-wrap</p>
+      <p>
+        flex-wrap:wrap + gap + כל card: flex:1, min-width:200px → responsive
+        אוטומטי
+      </p>
+
+      <div class="cards">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+      </div>
+    </section>
+  </body>
+</html>

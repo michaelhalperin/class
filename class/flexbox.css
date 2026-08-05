@@ -1,0 +1,235 @@
+body {
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+}
+
+.label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.item {
+  background-color: #4a3f8f;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.demo-box {
+  display: flex;
+  background-color: #e8eef5;
+  border: 2px dashed #b0bec5;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+/* ========== 1. Basic flex ========== */
+
+.flex-basic {
+  gap: 8px;
+}
+
+/* ========== 2. Row vs Column ========== */
+
+.flex-row {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.flex-column {
+  flex-direction: column;
+  gap: 8px;
+  width: 120px;
+}
+
+/* ========== 3. justify-content ========== */
+
+.justify-start {
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.justify-center {
+  justify-content: center;
+  gap: 8px;
+}
+
+.justify-end {
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+/* ========== 4. align-items ========== */
+
+.tall {
+  height: 120px;
+}
+
+.tall-item {
+  height: 60px;
+}
+
+.align-start {
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.align-center {
+  align-items: center;
+  gap: 8px;
+}
+
+.align-end {
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.align-stretch {
+  align-items: stretch;
+  gap: 8px;
+}
+
+.stretch-item {
+  height: auto;
+}
+
+/* ========== 5. gap + flex-wrap ========== */
+
+.flex-gap {
+  gap: 1rem;
+}
+
+.flex-wrap-demo {
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 320px;
+}
+
+.flex-wrap-demo .item {
+  width: 80px;
+}
+
+/* ========== 6. Nav ========== */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #4a3f8f;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #4a3f8f;
+}
+
+/* ========== 7. Hero centering ========== */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #e8eef5;
+  border: 2px dashed #b0bec5;
+}
+
+/* ========== 8. flex:1 / sidebar ========== */
+
+.layout {
+  display: flex;
+  gap: 12px;
+  min-height: 120px;
+}
+
+.sidebar {
+  flex: 0 0 240px;
+  background-color: #4a3f8f;
+  color: white;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.main {
+  flex: 1;
+  background-color: #3ecfae;
+  color: #333;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+/* ========== 9. align-self + order ========== */
+
+.align-self-demo {
+  align-items: center;
+  gap: 8px;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.order-demo {
+  gap: 8px;
+}
+
+.order-first {
+  order: -1;
+  background-color: #3ecfae;
+  color: #333;
+}
+
+/* ========== 10. Cards ========== */
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
+  text-align: center;
+}
