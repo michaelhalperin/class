@@ -1,36 +1,26 @@
-#title::before {
-  content: " hello ";
-  color: lightblue;
+.container {
+  display: flex;
+  background-color: blanchedalmond;
+  height: 350px;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
-#title::after {
-  content: " world ";
-  color: lightblue;
+.item {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  text-align: center;
 }
 
-.btn {
-  color:red;
-  width: 250px;
-}
-.btn2 {
-  color:red;
-  width: 250px;
+.one {
+  flex: 1;
 }
 
-.btn:hover {
-  color:blue;
-  width: 25px;
-}
-
-.input:focus{
-  border: 1px solid green;
-  border-radius: 8px;
-}
-
-input::placeholder{
-  color: red;
-}
-
-li:nth-child(1){
-  color: red;
+.self {
+  align-self: center;
+  flex: 1;
 }
